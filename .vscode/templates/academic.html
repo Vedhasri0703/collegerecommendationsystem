@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <title>College Recommendation System</title>
+        <link href="logo4.png" rel="icon">
+    </head>
+    <link rel="stylesheet" href="info.css">
+    <body>
+        <div class="sidenav">
+            <span>Personal Information</span><br>
+            <span class="color">Academic Information</span><br>
+            <span>Calculate Cut-off</span><br>
+            <span>Eligibility</span><br>
+            <span>College Recommendation</span>
+        </div>
+        <form class="form">
+            <h1 id="step-title" class="text-center">Academic Information</h1>
+            <div class="progressbar">
+              <div class="progress" id="progress" ></div>
+              <div class="progress-step progress-step-active"></div>
+              <div class="progress-step progress-step-active" ></div>
+              <div class="progress-step" ></div>
+              <div class="progress-step" ></div>
+              <div class="progress-step" ></div>
+            </div>
+            <div class="form-step form-step-active">
+                <div class="input-group">
+                    <h2 style="text-align: center;">SSLC Information</h1>
+                    <table style="width: 1000px; border-spacing: 2cm 0.5em; " >
+                        <tr>
+                            <td >10<sup>th</sup>  Registration Number </td>
+                            <td><input type="text"  required></td>
+                            <td>Name of the School </td>
+                            <td><input type="text"  required></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Month & Year of Passing</td>
+                            <td><input type="month"  required></td>
+                            <td>Place of the school</td>
+                            <td><input type="text" required></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Board Of Education</td>
+                            <td>
+                                <select  required>
+                                    <option>- Please Select -</option>
+                                    <option>TNSB</option>
+                                    <option>CBSE</option>
+                                    <option>CISCE</option>
+                                    <option>ICSE</option>
+                                    <option>NIOS</option>
+                                    <option>Others</option>                                    
+                                </select>
+                            </td>
+                            <td>Max marks obtained in SSLC</td>
+                            <td><input type="text" required></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td><input type="text" required></td>
+                            <td>Toatl Marks in SSLC</td>
+                            <td><select required>  
+                                    <option>- Please Select - </option>
+                                    <option>500</option>
+                                    <option>600</option>                        
+                            </select></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>State</td>
+                            <td>
+                                <select  required>
+                                    <option>- Please Select -</option>
+                                    <option>Andhra Pradesh</option>
+                                    <option>Arunachal Pradesh</option>
+                                    <option>Assam</option>
+                                    <option>Bihar</option>
+                                    <option>Chhattisgarh</option>
+                                    <option>Goa</option>
+                                    <option>Gujarat</option>
+                                    <option>Haryana</option>
+                                    <option>Himachal Pradesh</option>
+                                    <option>Jharkhand</option>
+                                    <option>Karnataka</option>
+                                    <option>Kerala</option>
+                                    <option>Madhya Pradesh</option>
+                                    <option>Maharashtra</option>
+                                    <option>Manipur</option>
+                                    <option>Meghalaya</option>
+                                    <option>Mizoram</option>
+                                    <option>Nagaland</option>
+                                    <option>Odisha</option>
+                                    <option>Punjab</option>
+                                    <option>Rajasthan</option>
+                                    <option>Sikkim</option>
+                                    <option>Tamil Nadu</option>
+                                    <option>Telangana</option>
+                                    <option>Tripura</option>
+                                    <option>Uttar Pradesh</option>
+                                    <option>Uttarakhand</option>
+                                    <option>West Bengal</option>
+                                </select>
+                            </td>
+                            <td>Percentage</td>
+                            <td><input type="text" required></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <h2 style="text-align: center;">HSC Information</h1>
+                    <table style="width: 1000px; border-spacing: 2cm 0.5em; " >
+                        
+                        <tr>
+                            <td >12<sup>th</sup>  Registration Number </td>
+                            <td><input type="text"  required></td>
+                            <td>Name of the School </td>
+                            <td><input type="text"  required></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Month & Year of Passing</td>
+                            <td><input type="month"  required></td>
+                            <td>Place of the school</td>
+                            <td><input type="text" required></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Board Of Education</td>
+                            <td>
+                                <select  required>
+                                    <option>- Please Select -</option>
+                                    <option>TNSB</option>
+                                    <option>CBSE</option>
+                                    <option>CISCE</option>
+                                    <option>ICSE</option>
+                                    <option>NIOS</option>
+                                    <option>Others</option>                                    
+                                </select>
+                            </td>
+                            <td>Max marks obtained in HSC</td>
+                            <td><input type="text" required></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td><input type="text" required></td>
+                            <td>Toatl Marks in HSC</td>
+                            <td><select required>  
+                                    <option>- Please Select - </option>
+                                    <option>500</option>
+                                    <option>600</option>                        
+                            </select></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>State</td>
+                            <td>
+                                <select  required>
+                                    <option>- Please Select -</option>
+                                    <option>Andhra Pradesh</option>
+                                    <option>Arunachal Pradesh</option>
+                                    <option>Assam</option>
+                                    <option>Bihar</option>
+                                    <option>Chhattisgarh</option>
+                                    <option>Goa</option>
+                                    <option>Gujarat</option>
+                                    <option>Haryana</option>
+                                    <option>Himachal Pradesh</option>
+                                    <option>Jharkhand</option>
+                                    <option>Karnataka</option>
+                                    <option>Kerala</option>
+                                    <option>Madhya Pradesh</option>
+                                    <option>Maharashtra</option>
+                                    <option>Manipur</option>
+                                    <option>Meghalaya</option>
+                                    <option>Mizoram</option>
+                                    <option>Nagaland</option>
+                                    <option>Odisha</option>
+                                    <option>Punjab</option>
+                                    <option>Rajasthan</option>
+                                    <option>Sikkim</option>
+                                    <option>Tamil Nadu</option>
+                                    <option>Telangana</option>
+                                    <option>Tripura</option>
+                                    <option>Uttar Pradesh</option>
+                                    <option>Uttarakhand</option>
+                                    <option>West Bengal</option>
+                                </select>
+                            </td>
+                            <td>Percentage</td>
+                            <td><input type="text" required></td>
+                        </tr>
+                    </table>
+                </div>
+              <div class="btns-group">
+                <a href="personal.html" class="btn btn-prev">Previous</a>
+                <a href="http://127.0.0.1:5000" class="btn btn-next">Next</a>
+              </div>
+            </div>
+        </form>    
+    </body>
+</html>

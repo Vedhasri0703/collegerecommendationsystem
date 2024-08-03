@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>College Recommendation System</title>
+        <link href="logo4.png" rel="icon">
+    </head>
+    <link rel="stylesheet" href="info.css">
+    <body>
+        <div class="sidenav">
+            <span class="color">Personal Information</span><br>
+            <span>Academic Information</span><br>
+            <span>Calculate Cut-off</span><br>
+            <span>Eligibility</span><br>
+            <span>College Recommendation</span>
+        </div>
+        <form class="form">
+            <h1 id="step-title" class="text-center">Personal Information</h1>
+            <div class="progressbar">
+              <div class="progress" id="progress" ></div>
+              <div class="progress-step progress-step-active"></div>
+              <div class="progress-step" ></div>
+              <div class="progress-step" ></div>
+              <div class="progress-step" ></div>
+              <div class="progress-step" ></div>
+            </div>
+      
+            <!-- Steps -->
+            <div class="form-step form-step-active">
+              <div class="input-group">
+                <table style="width: 1000px; border-spacing: 2cm 0.5em; " >
+                    <tr>
+                        <td>Name: </td>
+                        <td><input type="text" required></td>
+                        <td>Nationality</td>
+                        <td><input type="text" required></td>
+                    </tr>
+                    <tr>
+                        <td>Age:</td>
+                        <td ><input type="number" id="age" name="age" required min="0" max="100" step="1" ></td>
+                        <td>Community</td>
+                        <td>
+                            <select required>
+                                <option>- Please Select - </option>
+                                <option>DC</option>
+                                <option>MBC</option>
+                                <option>BC</option>
+                                <option>BC MUSLIMS</option>
+                                <option>SC</option>
+                                <option>ST</option>                            
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date Of Birth:</td>
+                        <td ><input type=date required></td>
+                        <td>Religion</td>
+                        <td>
+                            <select required>
+                                <option>- Please Select - </option>
+                                <option>Hindu</option>
+                                <option>Islam</option>
+                                <option>Christian</option>
+                                <option>Buddism</option>
+                                <option>Jain</option>
+                                <option>Others</option>                   
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Blood Group</td>
+                        <td>
+                            <Select required>
+                                <option>- Please Select -</option>
+                                <option>A+ve</option>
+                                <option>A-ve</option>
+                                <option>B+ve</option>
+                                <option>B-ve</option>
+                                <option>O+ve</option>
+                                <option>O-ve</option>
+                                <option>AB+ve</option>
+                                <option>AB-ve</option>
+                            </Select>
+                        </td>
+                        <td>Gender </td>
+                        <td>
+                            <input type="radio"  name="Gender" value="Male"> 
+                            <label for="Male">Male</label>
+                            <input type="radio"  name="Gender" value="Female">
+                            <label for="Female">Female</label>
+                            <input type="radio" name="Gender" value="Others">    
+                            <label for="others">Others</label>                     
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>E-Mail:</td>
+                        <td><input type="email" required></td>
+                        <td>Mobile Number: (91+)</td>
+                        <td><input type="tel" required></td>
+                    </tr>
+                    <tr>
+                        <td>Address For<br>Communication: </td>
+                        <td colspan="3" ><textarea required></textarea></td>
+                    </tr>
+                </table>
+              </div>
+              <div class="">
+                <a href="academic.html" class="btn btn-next width-50 ml-auto">Next</a>
+              </div>
+            </div>
+          </form>
+    </body>
+</html>

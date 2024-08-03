@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>College Recommendation System</title>
+        <link href="logo4.png" rel="icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/c4bb169d63.js" crossorigin="anonymous"></script>
+    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="home.css" rel="stylesheet">
+<body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="personal.html">Personal information</a>
+          <a href="academic.html">Academic Information</a>
+          <a href="http://127.0.0.1:5000">Check</a>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li ><a><span style="font-size:22px;cursor:pointer" onclick="openNav()">&#9776;</span></a></li>
+            <li ><a href="#Description"><i class="fa fa-fw fa-home"></i>Home</a></li>
+            <li><a href="college.html"><i class="fa-solid fa-building-columns"></i> College</a></li>
+            <li><a href="#Contact"><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><b>College Recommendation System</b></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container-text-center"></div>
+    </div>
+
+    <div id="arrow">
+        <center><i class="arrow up"></i></center>
+    </div>
+    
+    <div id="descript">
+        <p id="Description">About Us</p>
+    </div>
+    <div id="descript-inner">
+            The College Recommendation System (CRS) is designed to help students identify suitable colleges based on their 12th-grade 
+            cutoff marks, preferences, and the counseling process of Anna University. This system leverages historical admission data,
+            current cutoff trends, and student preferences to provide personalized college recommendations.        
+    </div>
+
+    <div class="bg2"></div>
+
+    <div class="contact">
+        <div id="Contact">CONTACT</div>
+        <span>
+            <center>
+                <table>
+                    <tr>
+                        <td><i class="fa fa-map-marker"></i> Tamil Nadu, India</td>
+                        <td id="textbox"><input type=text placeholder="Name"> <input type="email" placeholder="Email"</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-phone"></i>Phone: +91 987654321</td>
+                        <td id="textbox"><input type="text" placeholder="Message"></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-envelope"></i>E-Mail: mail@gmail.com</td>
+                        <td class="send"><a href="#"><i class="fa-solid fa-paper-plane"></i></a></td>
+                    </tr>
+                </table>
+            </center>
+        </span>
+    </div>
+    <div class="bg3"></div>
+    <div class="rule">
+        Procedure
+        <ol>
+            <li>Click Menu</li>
+            <li>Click Personal information and enter the Personal detail</li>
+            <li>Click Academic information, enter Academic details</li>
+            <li>Click Check to enter Cut-off details</li>
+        </ol>
+    </div>
+    
+    <script>
+        
+        function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+                }
+                
+                function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+                }
+    </script>
+    <footer class="container-fluid bg-dark text-center">
+    <p>© 2024 College Recommendation System. All rights reserved. | Privacy Policy | Terms of Service | Contact Us</p>    
+    </footer>
+
+    </body>
+</html>

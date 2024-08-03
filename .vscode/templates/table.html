@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>College Recommendation System</title>
+        <link href="logo4.png" rel="icon">
+    </head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='info3.css') }}">
+    <body>
+        <div class="sidenav">
+            <span>Personal Information</span><br>
+            <span>Academic Information</span><br>
+            <span>Calculate Cut-off</span><br>
+            <span>Eligibility</span><br>
+            <span class="color">College Recommendation</span>
+        </div>
+        <form class="form">
+            <h1 id="step-title" class="text-center">College Recommendation</h1>
+            <div class="progressbar">
+              <div class="progress" id="progress" ></div>
+              <div class="progress-step progress-step-active"></div>
+              <div class="progress-step progress-step-active" ></div>
+              <div class="progress-step progress-step-active" ></div>
+              <div class="progress-step progress-step-active" ></div>
+              <div class="progress-step progress-step-active" ></div>
+            </div>
+
+            <div class="form-step form-step-active">
+                <div class="input-group">
+                    <div class="main">
+                        {% if eligible %}
+                        <table width="100%" border="2px" >
+                                <tr class="row">
+                                    <td>Code</td>
+                                    <td>Name</td>
+                                </tr>
+                                {% for row in data %}
+                                    <tr>
+                                        <td>{{ row[0] }}</td>
+                                        <td>{{ row[1] }}</td>
+                                    </tr>
+                                {% endfor %}
+                        </table>
+                        {% else %}
+                        <table width="100%" border="2px" height="100%">
+                                <tr class="row" >
+                                    <td>Name</td>
+                                </tr>
+                                {% for row in data %}
+                                    <tr>
+                                        <td>{{ row[0] }}</td>
+                                    </tr>
+                                {% endfor %}
+                        </table>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>    
+        </form>
+    </body>
+</html>

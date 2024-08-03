@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Recommendation System</title>
+    <link href="logo4.png" rel="icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='info2.css') }}">
+    <script>
+        function calculateCutoff() {
+            // Get the values of the marks
+            let pmark = parseFloat(document.getElementById('pmark').value) || 0;
+            let cmark = parseFloat(document.getElementById('cmark').value) || 0;
+            let mmark = parseFloat(document.getElementById('mmark').value) || 0;
+
+            // Calculate the cutoff
+            let cutoff = ((pmark + cmark)/2) + mmark;
+
+            // Update the cutoff field
+            document.getElementById('cutoff').value = cutoff.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <div class="sidenav">
+        <span>Personal Information</span><br>
+        <span>Academic Information</span><br>
+        <span class="color">Calculate Cut-off</span><br>
+        <span>Eligibility</span><br>
+        <span>College Recommendation</span>
+    </div>
+    <form class="form" method="POST" action="/">
+        <h1 id="step-title" class="text-center">Calculate Cut-off</h1>
+        <div class="progressbar">
+            <div class="progress" id="progress"></div>
+            <div class="progress-step progress-step-active"></div>
+            <div class="progress-step progress-step-active"></div>
+            <div class="progress-step progress-step-active"></div>
+            <div class="progress-step"></div>
+            <div class="progress-step"></div>
+        </div>
+        <div class="form-step form-step-active">
+            <div class="input-group">
+                <center>
+                    <table style="width: 500px; border-spacing: 2cm 0.5em;">
+                        <tr>
+                            <td><label for="mark">12<sup>th</sup> Mark:</label></td>
+                            <td><input type="text" id="mark" name="mark" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pmark">Physics:</label></td>
+                            <td><input type="text" id="pmark" name="pmark" oninput="calculateCutoff()" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="cmark">Chemistry:</label></td>
+                            <td><input type="text" id="cmark" name="cmark" oninput="calculateCutoff()" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mmark">Maths:</label></td>
+                            <td><input type="text" id="mmark" name="mmark" oninput="calculateCutoff()" required></td>
+                        </tr> 
+                        <tr>
+                            <td><label for="cutoff">Cut-off:</label></td>
+                            <td><input type="text" id="cutoff" name="cutoff" readonly></td>
+                        </tr>
+                        <tr>
+                            <td><label for="course">Course:</label></td>
+                            <td><input type="text" id="course" name="course" required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"></td>
+                        </tr>
+                    </table>
+                </center>
+            </div>
+            <p><center>(Available Courses: CS, CSBS, EEE, EC, MECH, CIVIL, AIDS, IT)</center></p><br>
+            <div class="">
+                <button type="submit" class="btn btn-next width-50 ml-auto">Next</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

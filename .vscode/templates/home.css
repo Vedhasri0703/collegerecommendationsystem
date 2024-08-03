@@ -1,0 +1,258 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background: transparent;
+    border: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    font-family: 'High Tower Text';
+    font-size: 22px;
+    transition: top 0.9s, background-color 0.3s;
+  }
+
+  #navbar a{
+      float: right;
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 15px;
+      padding-right: 20px;
+      text-decoration: none;
+      font-size: 20px;
+      font-family: 'High Tower Text';
+      transition: color 0.3s, border 0.3s;
+  }
+
+  .navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  .navbar-inverse .navbar-brand {
+      color: #333;
+  }
+
+  .navbar-inverse .navbar-nav > li > a {
+    color: #333;
+  }
+
+  .navbar-inverse .navbar-nav > li > a:hover {
+    color: #333;
+    border: #333 4px solid;
+      border-radius: 5px;
+  }
+
+  .navbar-right{
+      padding-top: 17px;
+      padding-right: 17px;
+      font-size: 25px;
+  }
+  footer {
+    background-color: rgb(44, 41, 41);
+    color: rgb(153, 152, 152);
+    padding: 25px;
+  }
+
+  #entry {
+    font-family: "Cooper Black";
+    font-weight: 600;
+    font-size: 65px;
+  }
+
+  .jumbotron {
+    background-image: url("college4.jpg");
+    background-size: cover;
+    background-position:top;
+    height: 600px;
+    margin-bottom: 0;
+    position: relative;
+    color: #333;
+    animation: slideUp 2s ease-out;
+    background-attachment: fixed;
+    background-repeat: no-repeat;  
+  }
+
+  .arrow {
+    border: solid #333;
+    border-width: 0 5px 5px 0;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  
+  p {
+    font-family: "Gabriola Regular";
+    font-size: larger;
+    font-weight: 500;
+  }
+
+  #pl {
+    font-family: "Gabriola Regular";
+    font-size: 35px;
+    font-weight: 600;
+    font-style: bold;
+  }
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  font-family: 'High Tower Text';
+}
+
+.overlay-content {
+  position: relative;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+#descript{
+    font-family: 'High Tower Text';
+    font-size: 80px;
+    font-weight: 400;
+    text-align: center;
+    color: #333;
+    margin:20px ;
+}
+
+#descript-inner{
+    font-family: "Gabriola Regular";
+    text-align: justify;
+    font-size: 20px;
+    background-color: #EEEEEE;
+    margin: 0;
+    padding: 30px;
+}
+
+
+#descript-inner{
+  padding: 100px;
+  text-align: center;
+  column-count: 2;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-color: #333;
+  font-size: 30px;
+}
+
+.bg2{
+  background-image: url('image2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  animation: slideUp 2s ease-out;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.contact{
+  background-color: #EEEEEE;
+  border: #EEEEEE 3px solid;
+  margin:60px;
+  font-size: 50px;
+  color: #333;
+  font-family: 'High Tower Text';
+  text-align: center;
+}
+
+.contact:hover{
+  border-radius: 20px;
+  transition: 0.9s;
+  box-shadow:#DDDDDD 0px 0px 2px 10px;
+}
+.contact span{
+  margin: 20px;
+}
+table{
+  width: 1100px;
+  height: 200px;
+  text-align: left;
+  font-size: 25px;
+}
+#textbox{
+  padding-left: 30px;
+}
+.send a i{
+  padding-left: 550px;
+  color: #333;
+}
+
+
+.bg3{
+  background-image: url('image3.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  animation: slideUp 2s ease-out;
+  background-attachment: fixed;
+  position: relative;
+}
+
+
+.rule{
+  margin: 50px;
+  padding-left: 400px;
+  font-size: 35px;
+  font-family: 'High Tower Text';
+  
+}
+
+.rule ol{
+  padding-left: 50px;
+  font-size: 30px;
+  font-family: 'Gabriola Regular';
+}
+
